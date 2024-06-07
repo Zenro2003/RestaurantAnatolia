@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container-input {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: 30vw;
+      }
+
+      label {
+        position: absolute;
+        top: 50%;
+        left: 8px;
+        transform: translate(-50%);
+        color: #929191;
+        background-color: white;
+        padding: 0 5px;
+        transition: all 0.2s ease-in-out;
+      }
+      .container-input:focus-within label {
+        top: 0;
+        font-size: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-input">
+      <label for="custom-input">Username</label>
+      <input type="text" id="custom-input" />
+    </div>
+  </body>
+</html>
